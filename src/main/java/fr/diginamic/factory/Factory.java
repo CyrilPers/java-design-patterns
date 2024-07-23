@@ -1,7 +1,7 @@
 package fr.diginamic.factory;
 
-public class Factory {
-    public static Element createElement(Type type, String nom, double valeur, UNITE unite) {
+public class Factory implements IFactory {
+    public Element createElement(Type type, String nom, double valeur, UNITE unite) {
         Element element = null;
         switch (type) {
             case INGREDIENT:
@@ -15,5 +15,5 @@ public class Factory {
                 break;
         }
         return element;
-    }
+        }
 }
