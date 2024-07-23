@@ -19,59 +19,59 @@ public class Produit {
     protected Produit() {
     }
 
-    protected String getNom() {
+    public String getNom() {
         return nom;
     }
 
-    protected void setNom(String nom) {
+    public void setNom(String nom) {
         this.nom = nom;
     }
 
-    protected String getGrade() {
+    public String getGrade() {
         return grade;
     }
 
-    protected void setGrade(String grade) {
+    public void setGrade(String grade) {
         this.grade = grade;
     }
 
-    protected List<Additif> getAdditifs() {
+    public List<Additif> getAdditifs() {
         return additifs;
     }
 
-    protected void setAdditifs(List<Additif> additifs) {
+    public void setAdditifs(List<Additif> additifs) {
         this.additifs = additifs;
     }
 
-    protected List<Allergene> getAllergenes() {
+    public List<Allergene> getAllergenes() {
         return allergenes;
     }
 
-    protected void setAllergenes(List<Allergene> allergenes) {
+    public void setAllergenes(List<Allergene> allergenes) {
         this.allergenes = allergenes;
     }
 
-    protected List<Ingredient> getIngredients() {
+    public List<Ingredient> getIngredients() {
         return ingridients;
     }
 
-    protected void setIngredients(List<Ingredient> ingridients) {
+    public void setIngredients(List<Ingredient> ingridients) {
         this.ingridients = ingridients;
     }
 
-    protected Marque getMarque() {
+    public Marque getMarque() {
         return marque;
     }
 
-    protected void setMarque(Marque marque) {
+    public void setMarque(Marque marque) {
         this.marque = marque;
     }
 
-    protected Categorie getCategorie() {
+    public Categorie getCategorie() {
         return categorie;
     }
 
-    protected void setCategorie(Categorie categorie) {
+    public void setCategorie(Categorie categorie) {
         this.categorie = categorie;
     }
 }
