@@ -30,6 +30,10 @@ public class Service implements IElement {
         this.employes = employes;
     }
 
+    public void setEmployes(Employe employe) {
+        this.employes = List.of(employe);
+    }
+
     public List<Service> getServices() {
         return services;
     }
@@ -38,14 +42,18 @@ public class Service implements IElement {
         this.services = services;
     }
 
+    public void setServices(Service service) {
+        this.services = List.of(service);
+    }
+
     @Override
     public double calculerSalaire() {
         double salaire = 0;
         for (Employe employe : employes)
             salaire += employe.calculerSalaire();
         if (services != null) {
-        for (Service service : services)
-            salaire += service.calculerSalaire();
+            for (Service service : services)
+                salaire += service.calculerSalaire();
         }
         return salaire;
     }
