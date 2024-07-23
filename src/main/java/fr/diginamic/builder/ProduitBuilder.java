@@ -30,12 +30,9 @@ public class ProduitBuilder {
     }
 
     public ProduitBuilder appendAdditif(Additif additif) {
-        List<Additif> additifs = produit.getAdditifs();
-        if (additifs == null) {
-            additifs = new ArrayList<>();
-        }
-        additifs.add(additif);
-        produit.setAdditifs(additifs);
+        if (produit.getAdditifs() == null)
+            produit.setAdditifs(new ArrayList<>());
+        produit.getAdditifs().add(additif);
         return this;
     }
 
@@ -46,12 +43,9 @@ public class ProduitBuilder {
     }
 
     public ProduitBuilder appendAllergene(Allergene allergene) {
-        List<Allergene> allergenes = produit.getAllergenes();
-        if (allergenes == null) {
-            allergenes = new ArrayList<>();
-        }
-        allergenes.add(allergene);
-        produit.setAllergenes(allergenes);
+        if (produit.getAllergenes() == null)
+            produit.setAllergenes(new ArrayList<>());
+        produit.getAllergenes().add(allergene);
         return this;
     }
 
@@ -61,12 +55,9 @@ public class ProduitBuilder {
     }
 
     public ProduitBuilder appendIngredient(Ingredient ingredient) {
-        List<Ingredient> ingredients = produit.getIngridients();
-        if (ingredients == null) {
-            ingredients = new ArrayList<>();
-        }
-        ingredients.add(ingredient);
-        produit.setIngredients(ingredients);
+        if (produit.getIngredients() == null)
+            produit.setIngredients(new ArrayList<>());
+        produit.getIngredients().add(ingredient);
         return this;
     }
 

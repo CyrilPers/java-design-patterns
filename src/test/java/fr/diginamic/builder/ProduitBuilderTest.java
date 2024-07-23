@@ -30,8 +30,8 @@ public class ProduitBuilderTest {
         assert(produit instanceof Produit);
         assert(produit.getNom().equals("ProductName"));
         assert(produit.getGrade().equals("Grade"));
-        assert(produit.getIngridients().size() == 1);
-        assert(produit.getIngridients().get(0).getNom().equals("Ingredient1"));
+        assert(produit.getIngredients().size() == 1);
+        assert(produit.getIngredients().get(0).getNom().equals("Ingredient1"));
         assert(produit.getAdditifs().size() == 1);
         assert(produit.getAdditifs().get(0).getNom().equals("Additif1"));
         assert(produit.getAllergenes().size() == 2);
@@ -39,7 +39,7 @@ public class ProduitBuilderTest {
         assert(produit.getAllergenes().get(1).getNom().equals("Allergene2"));
         assert(produit.getMarque().getNom().equals("Marque"));
         assert(produit.getCategorie().getNom().equals("Categorie"));
-        assert(produit.getIngridients().get(0).equals(ingredient));
+        assert(produit.getIngredients().get(0).equals(ingredient));
     }
 
 }

@@ -51,7 +51,7 @@ public class Produit {
         this.allergenes = allergenes;
     }
 
-    protected List<Ingredient> getIngridients() {
+    protected List<Ingredient> getIngredients() {
         return ingridients;
     }
 
